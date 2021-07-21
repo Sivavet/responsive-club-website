@@ -78,8 +78,16 @@ header{
     justify-self: center;
     align-self: center;
 }
-#about #schedule th{
+#about #schedule-mini{
+    justify-self: center;
+    align-self: center;
+}
+/* #about #schedule th{
     background-color: hsla(220, 80%, 67%,1);
+} */
+table th{
+    background-color: hsla(220, 80%, 67%,1);
+    
 }
 table{
     border: 1px solid hsl(60, 100%, 77%);
@@ -113,4 +121,15 @@ td{
 #location img{
     max-width: 60%;
     max-height: 60%;
+}
+
+@media only screen and (max-width: 420px){
+    #schedule{
+        display: none;
+    }
+}
+@media only screen and (min-width: 430px){
+    #schedule-mini{
+        display: none;
+    }
 }
