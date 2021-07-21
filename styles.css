@@ -74,6 +74,14 @@ header{
     display: grid;
     grid-template: 1fr / repeat(2, 1fr);
 }
+#about div{
+    align-self: center;
+}
+#about div:nth-child(2){
+    display: grid;
+    align-content: space-around;
+    justify-content: space-around;
+}
 #about #schedule{
     justify-self: center;
     align-self: center;
