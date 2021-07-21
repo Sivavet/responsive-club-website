@@ -1,0 +1,116 @@
+html html:after html:before{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0,0.6);
+    color:aliceblue;
+}
+a{
+    color: hsl(60, 100%, 77%);
+}
+a:hover, h2{
+    color: lightgreen;
+}
+
+/* ---------------- NAV bar ----------------- */
+nav{
+    width: 98%;
+    height: 1%;
+    padding: 1%;
+
+    background-color: hsla(220, 80%, 67%,1);
+    border-radius: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+
+/* -------------- Header -------------------- */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+#blur{
+    background-image: url(./img/meet-room.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: inherit;
+    height: inherit;
+    
+    
+}
+#title{
+    width: 48%;
+    height: 1%;
+    padding: 1%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    align-self: center;
+
+    background-color: rgba(0, 0, 0,.8);
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* -------------- about -------------------- */
+#about{
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+}
+#about #schedule{
+    justify-self: center;
+    align-self: center;
+}
+#about #schedule th{
+    background-color: hsla(220, 80%, 67%,1);
+}
+table{
+    border: 1px solid hsl(60, 100%, 77%);
+}
+td{
+    background-color:hsla(208, 100%, 97%,.2);
+    padding: 5px;
+    text-align: center;
+}
+
+.img-container{
+    display: flex;
+    gap: 10px;
+
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5% auto;
+}
+
+.img-container img{
+    max-width: 20%;
+    max-height: 20%;
+}
+
+/* -------------- location ---------------- */
+#location{
+    align-self: center;
+    text-align: center;
+}
+#location img{
+    max-width: 60%;
+    max-height: 60%;
+}
