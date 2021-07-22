@@ -72,11 +72,9 @@ header{
 
 /* -------------- about -------------------- */
 #about{
-    display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
+    display: flex;
 }
 #about div{
-    min-width: 300px;
     align-self: center;
 }
 #about div:nth-child(2){
@@ -116,8 +114,6 @@ td{
 .img-container img{
     max-width: 300px;
     max-height: 600px;
-    min-width: 350px;
-    min-height: 400px;
 }
 
 /* -------------- location ---------------- */
@@ -128,6 +124,15 @@ td{
 #location img{
     max-width: 60%;
     max-height: 60%;
+}
+
+/* -------------- response -------------------- */
+
+@media only screen and (min-width: 480px){
+    #about{
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 720px){
