@@ -26,6 +26,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: space-around;
+    padding: 5px;
 }
 li{
     list-style: none;
@@ -75,10 +76,12 @@ header{
     grid-template: 1fr / repeat(2, 1fr);
 }
 #about div{
+    min-width: 300px;
     align-self: center;
 }
 #about div:nth-child(2){
     display: grid;
+    text-align: center;
     align-content: space-around;
     justify-content: space-around;
 }
@@ -106,13 +109,15 @@ td{
 
     align-self: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 5% auto;
 }
 
 .img-container img{
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 300px;
+    max-height: 600px;
+    min-width: 350px;
+    min-height: 400px;
 }
 
 /* -------------- location ---------------- */
@@ -125,3 +130,8 @@ td{
     max-height: 60%;
 }
 
+@media only screen and (max-width: 720px){
+    .img-container{
+        justify-content: space-around;
+    }
+}
